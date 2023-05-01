@@ -60,3 +60,15 @@ console.log(a, b);
 
 const [e, f, , , , , , c] = [12, 23, 45, 56, 67, 3, 47, 57, 09]
 console.log(c);
+
+const profileData = {
+    name: "Peter",
+    age: 32,
+    nationality: "Kenyan",
+    location: "Coast"
+};
+const profileUpdate = (profileData) => {
+    const { name, age, nationality, location } = profileData;
+    return "His name is " + name;
+}
+console.log(profileUpdate(profileData));
