@@ -72,3 +72,38 @@ const profileUpdate = (profileData) => {
     return "His name is " + name;
 }
 console.log(profileUpdate(profileData));
+
+
+const userPerson = {
+    name: "Jordan",
+    morningGreeting() {
+        return `Good Morning ${userPerson.name}`;
+    }
+};
+console.log(userPerson.morningGreeting());
+
+
+class Novel {
+    constructor(author) {
+        this._author = author;
+    }
+
+    get writer() {
+        return this._author;
+    }
+
+    set writer(updateAuthor) {
+        this._author = updateAuthor;
+    }
+};
+const book = new Novel('anonymous');
+console.log(book.writer);
+
+book.writer = 'updatedAuthor';
+console.log(book.writer);
+
+
+const multiply = (x, y) => {
+    return x * y;
+}
+export { multiply };
