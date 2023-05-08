@@ -107,3 +107,7 @@ const multiply = (x, y) => {
     return x * y;
 }
 export { multiply };
+
+import * as newObject from "./math_functions";
+console.log(newObject.add(1, 2));
+console.log(newObject.subtract(10, 56));

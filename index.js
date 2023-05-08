@@ -3,6 +3,9 @@
 import { add } from "./math_functions";
 console.log(add(1, 2));
 
+import { multiply } from "./review";
+console.log(multiply(2, 3));
+
 //here import will find add from where we exported it from
 //all this is in the same folder as the current file
 //the (./) tells the import to look for the file in the same folder
@@ -34,7 +37,7 @@ myMathModule.subtract(5, 3);
 
 
 
-//Create an esport fallback with export default
+//Create an export fallback with export default
 //this will usually be used if only 1 file is being exported from a file
 //it is also used to create a fallback value for a file or module
 
